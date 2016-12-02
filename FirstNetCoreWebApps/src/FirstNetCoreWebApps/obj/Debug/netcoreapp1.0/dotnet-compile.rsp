@@ -199,5 +199,5 @@
 --resource:"D:\CDC\.NET Core\FirstNetCoreWebApps\src\FirstNetCoreWebApps\obj\Debug\netcoreapp1.0\FirstNetCoreWebAppsdotnet-compile.deps.json",FirstNetCoreWebApps.deps.json
 D:\CDC\.NET Core\FirstNetCoreWebApps\src\FirstNetCoreWebApps\Program.cs
 D:\CDC\.NET Core\FirstNetCoreWebApps\src\FirstNetCoreWebApps\Startup.cs
+D:\CDC\.NET Core\FirstNetCoreWebApps\src\FirstNetCoreWebApps\Controllers\CustomController.cs
 D:\CDC\.NET Core\FirstNetCoreWebApps\src\FirstNetCoreWebApps\Controllers\HomeController.cs
-D:\CDC\.NET Core\FirstNetCoreWebApps\src\FirstNetCoreWebApps\Controllers\MyNewController.cs
