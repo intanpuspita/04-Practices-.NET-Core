@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace EntityFrameworkCore.Models
 {
@@ -10,6 +11,8 @@ namespace EntityFrameworkCore.Models
         public int ID { get; set; }
         public string FullName { get; set; }
         public string PlaceOfBirth { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime DateOfBirth { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }

@@ -92,6 +92,8 @@ namespace EntityFrameworkCore
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            SeedData.Initialize(app.ApplicationServices);
         }
     }
 }
