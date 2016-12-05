@@ -1,5 +1,5 @@
---temp-output:D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\obj\Debug\netcoreapp1.0\
---out:D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\bin\Debug\netcoreapp1.0\EntityFrameworkCore.dll
+--temp-output:D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\bin\src\EntityFrameworkCore\obj\Debug\netcoreapp1.0\
+--out:D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\bin\src\EntityFrameworkCore\bin\Debug\netcoreapp1.0\EntityFrameworkCore.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -229,7 +229,7 @@
 --reference:C:\Users\Intan_P\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Intan_P\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Intan_P\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\obj\Debug\netcoreapp1.0\EntityFrameworkCoredotnet-compile.deps.json",EntityFrameworkCore.deps.json
+--resource:"D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\bin\src\EntityFrameworkCore\obj\Debug\netcoreapp1.0\EntityFrameworkCoredotnet-compile.deps.json",EntityFrameworkCore.deps.json
 D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\Program.cs
 D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\Startup.cs
 D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\Controllers\AccountController.cs
@@ -241,8 +241,6 @@ D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\Migrations\20161205
 D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\Migrations\20161205013717_Initial.Designer.cs
 D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\Migrations\20161205050724_AddRanking.cs
 D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\Migrations\20161205050724_AddRanking.Designer.cs
-D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\Migrations\20161205051719_Rename Ranking.cs
-D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\Migrations\20161205051719_Rename Ranking.Designer.cs
 D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\Migrations\ApplicationDbContextModelSnapshot.cs
 D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\Models\ApplicationUser.cs
 D:\CDC\.NET Core\EntityFrameworkCore\src\EntityFrameworkCore\Models\Employee.cs

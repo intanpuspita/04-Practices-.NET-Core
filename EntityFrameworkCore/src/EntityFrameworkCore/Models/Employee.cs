@@ -10,6 +10,7 @@ namespace EntityFrameworkCore.Models
     {
         public int ID { get; set; }
 
+        [Required]
         [Display(Name = "Full Name")]
         public string FullName { get; set; }
 
@@ -21,9 +22,15 @@ namespace EntityFrameworkCore.Models
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime DateOfBirth { get; set; }
 
+        [RegularExpression(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}")]
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
+
+        [Required]
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
         public string Address { get; set; }
+
+        public string Rating { get; set; }
     }
 }

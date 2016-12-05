@@ -8,9 +8,10 @@ using EntityFrameworkCore.Data;
 namespace EntityFrameworkCore.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20161205050724_AddRanking")]
+    partial class AddRanking
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")
@@ -82,7 +83,7 @@ namespace EntityFrameworkCore.Migrations
 
                     b.Property<string>("PlaceOfBirth");
 
-                    b.Property<string>("Rating");
+                    b.Property<string>("Ranking");
 
                     b.HasKey("ID");
 

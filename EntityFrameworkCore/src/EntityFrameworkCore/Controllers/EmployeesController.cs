@@ -84,7 +84,7 @@ namespace EntityFrameworkCore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Address,DateOfBirth,Email,FullName,PhoneNumber,PlaceOfBirth")] Employee employee)
+        public async Task<IActionResult> Create([Bind("ID,Address,DateOfBirth,Email,FullName,PhoneNumber,PlaceOfBirth,Ranking")] Employee employee)
         {
             if (ModelState.IsValid)
             {
@@ -116,7 +116,7 @@ namespace EntityFrameworkCore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Address,DateOfBirth,Email,FullName,PhoneNumber,PlaceOfBirth")] Employee employee)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Address,DateOfBirth,Email,FullName,PhoneNumber,PlaceOfBirth,Ranking")] Employee employee)
         {
             if (id != employee.ID)
             {
