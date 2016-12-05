@@ -19,10 +19,41 @@ namespace EntityFrameworkCore.Controllers
             _context = context;    
         }
 
+        // Simple Index
         // GET: Employees
-        public async Task<IActionResult> Index()
+        //public async Task<IActionResult> Index()
+        //{
+        //    return View(await _context.Employee.ToListAsync());
+        //}
+
+        // Index and Search
+        // GET : Employees?searchString=xxx
+        //public async Task<IActionResult> Index(string searchString)
+        //{
+        //    var emp = from e in _context.Employee
+        //              select e;
+
+        //    if (!string.IsNullOrEmpty(searchString))
+        //    {
+        //        emp = emp.Where(dt => dt.FullName.Contains(searchString));
+        //    }
+
+        //    return View(await emp.ToListAsync());
+        //}
+
+        // Index and Search
+        // GET : Employees/Index/xxx
+        public async Task<IActionResult> Index(string id)
         {
-            return View(await _context.Employee.ToListAsync());
+            var emp = from e in _context.Employee
+                      select e;
+
+            if (!string.IsNullOrEmpty(id))
+            {
+                emp = emp.Where(dt => dt.FullName.Contains(id));
+            }
+
+            return View(await emp.ToListAsync());
         }
 
         // GET: Employees/Details/5
