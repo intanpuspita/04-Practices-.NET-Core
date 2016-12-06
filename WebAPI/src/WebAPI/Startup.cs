@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using WebAPI.Data;
 using WebAPI.Models;
 
 namespace WebAPI
@@ -39,6 +41,9 @@ namespace WebAPI
             // Dependency injection for the Web API
             // Call the Employee Repository & Interface
             services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
+
+            // Dependency Injection for context EF
+            services.AddDbContext<DbAppContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline
@@ -52,6 +57,8 @@ namespace WebAPI
             app.UseApplicationInsightsExceptionTelemetry();
 
             app.UseMvc();
+
+            DbInitializer.Initialize(app.ApplicationServices);
         }
     }
 }
