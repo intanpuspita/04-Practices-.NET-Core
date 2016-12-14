@@ -1,7 +1,7 @@
 # 04-Practices-.NET-Core
 Sample program of .NET Core
 
-Most of the materials are from https://docs.microsoft.com/en-us/aspnet/core
+ASP.NET Core materials are from https://docs.microsoft.com/en-us/aspnet/core
 
 To update EF database
 - If Data/Migrations folder is not empty, delete all files inside this folder
@@ -12,3 +12,5 @@ To update EF database
 - Type 'dotnet ef migrations add Initial'
 - Type 'dotnet ef database update'
 - Re-run the application
+
+ReactJS.Net materials are from https://reactjs.net/getting-started/tutorial.html
