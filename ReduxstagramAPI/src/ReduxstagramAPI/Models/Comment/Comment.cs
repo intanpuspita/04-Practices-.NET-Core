@@ -1,0 +1,12 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ReduxstagramAPI.Models
+{
+    public class Comment
+    {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int CommentId { get; set; }
+        public string Text { get; set; }
+        public string User { get; set; }
+    }
+}
